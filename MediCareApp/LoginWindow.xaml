@@ -1,0 +1,21 @@
+﻿<Window x:Class="MediCareApp.LoginWindow"
+               xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Student Login" Height="250" Width="400"  WindowStartupLocation="CenterScreen">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Doctor Code:" Margin="0,10,0,5"/>
+        <TextBox x:Name="txtStudentCode" Grid.Row="1" Height="30"/>
+
+        <TextBlock Text="Password:" Grid.Row="2" Margin="0,10,0,5"/>
+        <PasswordBox x:Name="txtPassword" Grid.Row="3" Height="30"/>
+
+        <Button Content="Login" Grid.Row="3" Margin="117,53,0,-33" Width="100" HorizontalAlignment="Left" Click="Login_Click"/>
+    </Grid>
+</Window>
